@@ -22,3 +22,9 @@
      i) Creates S3 Bucket
      ii) Creates SQS
      iii) Have SQS as Notification Event on S3 Bucket
+
+# Execute 
+
+      aws cloudformation deploy --template-file template.yaml --stack-name stack2 --capabilities CAPABILITY_IAM
+
+      aws cloudformation deploy --stack-name somy-tech-cf --template-file awscd.json
