@@ -1,0 +1,55 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Metadata": {
+        "AWS::CloudFormation::Designer": {
+            "f416ecfc-8075-42fa-8776-97128a6944b2": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": 490,
+                    "y": 60
+                },
+                "z": 0
+            },
+            "490e9aed-5c13-4e9c-b936-0299ee581eb3": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": 490,
+                    "y": 150
+                },
+                "z": 0
+            }
+        }
+    },
+    "Resources": {
+        "S3B4TEDI": {
+            "Type": "AWS::S3::Bucket",
+            "Properties": {
+                BucketName: "somyTechS3"
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "f416ecfc-8075-42fa-8776-97128a6944b2"
+                }
+            }
+        },
+        "SQSQ1MDEV": {
+            "Type": "AWS::SQS::Queue",
+            "Properties": {
+            "QueueName": "SomyTechQueue",
+            "FifoQueue": true,
+            "ContentBasedDeduplication": true
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "490e9aed-5c13-4e9c-b936-0299ee581eb3"
+                }
+            }
+        }
+    }
+}
