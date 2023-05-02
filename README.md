@@ -19,6 +19,6 @@
    
    
 # awscd.json
-   i) Creates S3 Bucket
-   ii) Creates SQS
-   iii) Have SQS as Notification Event on S3 Bucket
+     i) Creates S3 Bucket
+     ii) Creates SQS
+     iii) Have SQS as Notification Event on S3 Bucket
