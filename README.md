@@ -28,3 +28,7 @@
       aws cloudformation deploy --template-file template.yaml --stack-name stack2 --capabilities CAPABILITY_IAM
 
       aws cloudformation deploy --stack-name somy-tech-cf --template-file awscd.json
+
+
+Other examples
+https://upload.io/blog/cloudformation-lambda-examples/
